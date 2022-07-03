@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <style>
+        body {
+            background-size: 1300px;
+        }
+    </style>
+</head>
+
+<body id="bo" style="background-image:linear-gradient(rgb(78, 77, 77),rgb(33, 43, 17));">
+    <section id="header">
+        <a href="#"><img src="images/logo2.jpg" class="logo" style="width: 80px;"></a>
+        <h1>Shoe cart</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <style>
+        .cart-buy button {
+            background-color: rgb(255, 219, 207);
+            margin-left: 20px;
+        }
+
+        .cart-buy button:hover {
+            box-shadow: 2px 1px 5px 1px rgb(255, 255, 255);
+        }
+
+        .similar h1 {
+            color: aliceblue;
+            margin-left: 120px;
+        }
+    </style>
+    <section id="prodet" class="section-p1">
+        <div class="pro-img">
+            <img src="images/index images/21_NOBG.png" width="100%" id="mainimg">
+
+            <div class="smallimggrp">
+                <div class="smallimg">
+                    <img src="images/index images/21_NOBG.png" width="100%" class="small-img">
+                </div>
+                <div class="smallimg">
+                    <img src="images/index images/23.jpg" width="100%" class="small-img">
+                </div>
+                <div class="smallimg">
+                    <img src="images/index images/22.jpg" width="100%" class="small-img">
+                </div>
+                <div class="smallimg">
+                    <img src="images/index images/24.jpg.webp" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="sindet">
+
+            <h6>
+                <p>Men</p>
+                <p>/</p>
+                <p>shoe</p>
+            </h6>
+            <h4>
+                <p>Adidas</p>
+                <p>lace-up shoes</p>
+                </h2>
+                <span style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum tempora
+                    quibusdam porro
+                    reprehenderit provident corporis molestias minus quam iusto facere est minima, expedita natus
+                    veritatis.</span>
+                <h1>
+                    <p> <s> $300 </s></p>
+                    <p style="color: red;"> 30%</p>
+                    <p>off</p>
+                    <br>
+                    <p>$210</p>
+                    <!-- <p>million</p> -->
+                    <!-- <p>dollars</p> -->
+                </h1>
+                <select>
+                    <option>size</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <input type="number" value="1">
+                <div class="cart-buy">
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <button class="normal">BUY NOW</button>
+                </div>
+        </div>
+    </section>
+
+    <hr style="margin-left: 40px; margin-right:40px">
+    <hr style="margin-left: 40px; margin-right:40px; margin-top:3px">
+    <section class="similar">
+        <h1>similar products</h1>
+
+        <section id="product1" class="section-p1" class="new-arrivals">
+            <br><br><br>
+            <div class="product-container">
+                <div class="pro" class="top-right">
+                    <img src="images/index images/11.webp">
+                    <div class="des">
+                        <span style="opacity: 0.3;">adidas</span>
+                        <h5>runnung shoes</h5>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" class="top-left">
+                    <img src="images/index images/11.webp">
+                    <div class="des">
+                        <span style="opacity: 0.3;">adidas</span>
+                        <h5>runnung shoes</h5>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <!-- <img src="images/middle.jpg" alt=""> -->
+                <div class="pro" class="bottom-right">
+                    <img src="images/index images/11.webp">
+                    <div class="des">
+                        <span style="opacity: 0.3;">adidas</span>
+                        <h5>runnung shoes</h5>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" class="bottom-left">
+                    <img src="images/index images/11.webp">
+                    <div class="des">
+                        <span style="opacity: 0.3;">adidas</span>
+                        <h5>runnung shoes</h5>
+                        <h4>$100</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        var main = document.getElementById("mainimg");
+        var sml = document.getElementsByClassName("smallimg");
+
+        smalling[0].onclick = function () {
+            main.src = sml[0].src;
+        }
+        smalling[1].onclick = function () {
+            main.src = sml[1].src;
+        }
+        smalling[2].onclick = function () {
+            main.src = sml[2].src;
+        }
+        smalling[3].onclick = function () {
+            main.src = sml[3].src;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var bgpattern = document.getElementById("bo");
+        window.addEventListener("scroll", function () {
+            bgpattern.style.backgroundPosition = +window.pageYOffset + "px";
+        })
+    </script>
+
+    <section id="last-one" class="final">
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>vijayawada</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>6309768098</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>suryatej01234@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <!-- <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                        class="img-fluid" alt="logo"></a>
+                            </div> -->
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                        incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">services</a></li>
+                                    <!-- <li><a href="#">portfolio</a></li> -->
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a
+                                    href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div> -->
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
