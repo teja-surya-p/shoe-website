@@ -1,6 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Courgette&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Courgette&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Oxygen:wght@700&display=swap');
 
 * {
@@ -8,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
-    /* font-family: 'Acme', sans-serif; */
-    /* font-family: 'Acme', sans-serif; */
-    /* font-family: 'Courgette', cursive; */
 }
 
 h1 {
@@ -51,10 +45,7 @@ p {
 
 .bo {
     width: 100%;
-    background-color: rgb(183, 178, 178);
-    /* background-image: linear-gradient(rgb(32, 32, 32),rgb(164, 164, 164)); */
-    /* background-image: linear-gradient(rgb(203, 250, 62), rgb(251, 164, 2)); */
-    /* background-color: white; */
+    background-color: rgba(183, 178, 178, 0.487);
     background-repeat: repeat;
 }
 
@@ -64,17 +55,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
-    /* background: #7f7f7f79; */
-    box-shadow: 3px 3px 30px 30px rgba(143, 80, 37, 0.9);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
     z-index: 999;
-    /* position: sticky; */
     top: 0;
     left: 0;
 }
 
 #header h1 {
-    color: #eaffa9;
+    color: #000000;
 }
 
 #navbar {
@@ -93,9 +83,11 @@ p {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
+    color: #e0e0e0;
     transition: 0.3 ease;
     border-radius: 80px;
+    background-color: white;
+    padding: 5px;
 }
 
 #navbar li a:hover {
@@ -106,12 +98,12 @@ p {
 #navbar li a:active {
     transition: 0.4s ease;
     text-decoration: underline;
-    text-decoration-color: rgb(183, 253, 188);
+    text-decoration: none;
 }
 
 /* home page */
 #hero {
-    margin-top: -10px;
+    margin-top: -17vh;
     display: flex;
     flex-direction: space-between;
     align-items: flex-start;
@@ -123,21 +115,17 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 125px;
-    /* margin-right: 80px; */
     float: right;
     height: 520px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 20px 20px 20px rgba(227, 138, 75, 0.473);
-    /* border-radius: 20px; */
+    /* box-shadow: 20px 20px 20px rgba(227, 138, 75, 0.473); */
 }
 
 #hero .images img {
-    /* height: 500px; */
     margin-top: -800px;
     margin-left: -400px;
     width: 1500px;
-    /* padding-top: 15px; */
     padding-left: 47px;
     padding-bottom: 150px;
 
@@ -145,7 +133,6 @@ p {
     border-top-right-radius: 650px;
     border-bottom-left-radius: 450px;
     border-bottom-right-radius: 450px;
-    /* background-color: #000; */
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
@@ -159,20 +146,32 @@ p {
     font-weight: 600;
     padding: 15px 30px;
     color: #000;
-    background-color: rgb(255, 207, 190);
+    background-color: #ffb894;
     border-radius: 4px;
     cursor: pointer;
     border: none;
     outline: none;
     transition: .5s ease;
     opacity: 1;
+    z-index: 100;
+}
+
+.hero-button:hover {
+    box-shadow: 5px 5px 10px #b8b8b8,
+        -5px -5px 10px #ffffff;
+    transition: .1s;
+}
+
+.hero-button:active {
+    box-shadow: inset 5px 5px 9px #d99c7e,
+        inset -5px -5px 9px #ffd4aa;
+    transition: .1s;
 }
 
 #hero .prev {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    /* height: 600px; */
+    top: 35%;
     width: auto;
     padding: 16px;
     margin-top: 30px;
@@ -190,11 +189,11 @@ p {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 35%;
     width: auto;
     padding: 16px;
     margin-top: 30px;
-    margin-left: 800px;
+    margin-left: 750px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 18px;
@@ -204,11 +203,11 @@ p {
     border-radius: 90px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 #hero .prev:hover,
 #hero .next:hover {
     background-color: rgba(131, 131, 131, 0.8);
-    transition: .3s;
+    transition: .1s;
 }
 
 
@@ -220,79 +219,25 @@ p {
 }
 
 #product1 .product-container {
+    background: #e0e0e0;
+    width: 115%;
+    margin-left: -7%;
+    padding-left: 11%;
+    padding-right: 11%;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: .7%;
     flex-wrap: wrap;
     background-size: 300px 300px;
-    border-radius: 30px;
 }
 
 .pro {
-    background-color: #bfbfbf;
+    background-color: rgba(183, 178, 178, 0.487);
 }
 
 #product1 h2 {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 450px;
-    margin-right: 400px;
-}
-
-#product1 h2 p {
-    display: flex;
-    /* justify-content: space-between; */
     font-size: 70px;
-    color: #f5d0ad;
-    margin-right: 5px;
-}
-
-#product1 h2 .t:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(255, 144, 144);
-}
-
-#product1 h2 .r:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(253, 190, 132);
-}
-
-#product1 h2 .e:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(253, 235, 156);
-}
-
-#product1 h2 .n:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(233, 255, 133);
-}
-
-#product1 h2 .d:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(148, 255, 144);
-}
-
-#product1 h2 .i:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(125, 255, 210);
-}
-
-#product1 h2 .N:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(131, 191, 255);
-}
-
-#product1 h2 .g:hover {
-    font-size: 85px;
-    transition: .3s;
-    color: rgb(150, 121, 254);
+    color: #ff864a;
 }
 
 #product1 .pro {
@@ -309,7 +254,9 @@ p {
 }
 
 #product1 .pro:hover {
-    box-shadow: 20px 20px 20px rgba(227, 138, 75, 0.473);
+    box-shadow: 8px 8px 13px #636363,
+        -8px -8px 13px #ffffff;
+    transition: .2s;
 }
 
 #product1 .pro img {
@@ -317,11 +264,6 @@ p {
     border-radius: 20px;
     opacity: 1;
 }
-
-/* #product1 .pro img:hover {
-    transition: .2s ease;
-    opacity: 0.5;
-} */
 
 #product1 .pro img:active {
     transition: .2s ease;
@@ -349,8 +291,8 @@ p {
 }
 
 #product1 .pro .cart:hover {
-    /* box-shadow: 20px 20px 20px rgba(237, 227, 221, 0.953); */
-    opacity: 0.7;
+    box-shadow: 10px 10px 10px rgba(73, 73, 73, 0.953);
+    transition: .2s;
 }
 
 #banner {
@@ -359,6 +301,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 2%;
     background-image: url('images/banner55.jpg');
     width: 100%;
     height: 40vh;
@@ -374,13 +317,9 @@ p {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    color: rgba(255, 255, 255, 0.279);
+    color: rgba(255, 255, 255, 0.601);
     font-size: 60px;
 }
-
-/* #banner p:hover {
-    box-shadow: 1px 1px 10px 10px rgb(255, 127, 53);
-} */
 
 .normal {
     font-size: 14px;
@@ -584,12 +523,13 @@ p {
 }
 
 .parallax div {
+    margin-top: 15%;
     background-image: url("images/parallax.jpg");
-    min-height: 700px;
+    min-height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1000px 550px;
+    background-size: 1400px;
 }
 
 .cool {
