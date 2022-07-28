@@ -83,21 +83,20 @@ p {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: #e0e0e0;
+    color: black;
     transition: 0.3 ease;
-    border-radius: 80px;
-    background-color: white;
+    border-radius: 10%;
     padding: 5px;
 }
 
 #navbar li a:hover {
-    color: #088178;
     background-color: rgb(253, 221, 161);
 }
 
 #navbar li a:active {
+    box-shadow: inset 3px 3px 5px #b8b8b8,
+            inset -3px -3px 5px #ffffff;
     transition: 0.4s ease;
-    text-decoration: underline;
     text-decoration: none;
 }
 
@@ -214,6 +213,7 @@ p {
 
 
 #product1 {
+    margin-top: 3%;
     text-align: center;
     z-index: 1;
 }
@@ -236,8 +236,11 @@ p {
 }
 
 #product1 h2 {
+    /* margin-top: 10%; */
     font-size: 70px;
     color: #ff864a;
+    margin-top: -5%;
+    margin-bottom: 1%;
 }
 
 #product1 .pro {
@@ -398,6 +401,7 @@ p {
 }
 
 #prodet {
+    background-color: rgba(131, 131, 131, 0.8);
     display: flex;
     margin-top: 20px;
     position: relative;
@@ -435,11 +439,6 @@ p {
     color: rgb(255, 223, 185);
     font-size: 30px;
     margin-right: 13px;
-}
-
-.sindet h1 p:hover {
-    font-size: 50px;
-    transition: .3s;
 }
 
 .sindet h4 {
@@ -511,19 +510,15 @@ p {
     margin-right: 10px;
 }
 
-.similar h1 {
-    margin-top: 30px;
-
-}
-
-.similar h1:hover {
-    color: #a3a9fa;
-    font-size: 65px;
-    transition: .3s;
+#sim {
+    /* margin-right: -110%; */
+    margin-top:1%;
+    margin-bottom: -5%;
+    color: rgb(255, 170, 0);
 }
 
 .parallax div {
-    margin-top: 15%;
+    margin-top: 5%;
     background-image: url("images/parallax.jpg");
     min-height: 300px;
     background-attachment: fixed;
